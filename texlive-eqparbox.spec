@@ -6,7 +6,7 @@
 # catalog-version 4.0
 Name:		texlive-eqparbox
 Version:	4.0
-Release:	8
+Release:	9
 Summary:	Create equal-widthed parboxes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox
