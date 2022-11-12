@@ -1,19 +1,13 @@
-# revision 29419
-# category Package
-# catalog-ctan /macros/latex/contrib/eqparbox
-# catalog-date 2013-03-17 00:02:27 +0100
-# catalog-license lppl1.3
-# catalog-version 4.0
 Name:		texlive-eqparbox
-Version:	4.1
-Release:	3
+Version:	45215
+Release:	1
 Summary:	Create equal-widthed parboxes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -33,12 +27,12 @@ eqparbox's documentation. Various derivatives of \eqparbox are
 also provided.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,7 +45,8 @@ also provided.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
