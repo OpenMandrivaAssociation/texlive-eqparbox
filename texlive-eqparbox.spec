@@ -1,6 +1,6 @@
 Name:		texlive-eqparbox
 Version:	45215
-Release:	1
+Release:	2
 Summary:	Create equal-widthed parboxes
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox
