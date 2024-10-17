@@ -3,7 +3,7 @@ Version:	45215
 Release:	2
 Summary:	Create equal-widthed parboxes
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/eqparbox
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/eqparbox.doc.r%{version}.tar.xz
